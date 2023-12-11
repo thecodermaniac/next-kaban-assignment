@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.task-table {
+	min-width: 300px;
+}
+
+.modal {
+	@apply fixed z-10 top-0 left-0 w-screen h-screen flex justify-center items-center backdrop-blur-[2px] bg-stone-700/40;
+}
